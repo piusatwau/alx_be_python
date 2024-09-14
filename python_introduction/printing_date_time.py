@@ -21,3 +21,4 @@ print(f"The year is {current_year}")
 # time in utc
 utc_time = datetime.datetime.now(datetime.UTC)
 print(f"The time in UTC is {utc_time}")
+
