@@ -19,3 +19,17 @@ when money is withdrawn, account balance decreases i.e initial minus the value e
 
 
 '''
+
+residual_balance = 0
+
+print("1. Check account balance")
+print("2. Deposit money")
+print("3. Withdraw money")
+print("4. Print mini bank statemen")
+print("5. Exit")
+
+option = input(print("Select option to continue: "))
+if option == "1":
+    print(f"Your account balance is ${residual_balance}")
+
+
