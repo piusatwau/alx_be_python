@@ -19,8 +19,8 @@ match operator:
         print(f"The result is {result}")
         
     case "/":
-        result = num1/num2
-        if num1<=0:
-            print("Zero (0) cannot be a divider, chose a number greater zero.")
+        if num2 == 0:
+            print("Cannot dvide by 0")
         else:
+            result = num1/num2
             print(f"The result is {result}")
