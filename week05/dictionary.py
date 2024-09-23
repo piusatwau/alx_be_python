@@ -5,7 +5,6 @@ tenant = {
     "occupation": "Medical Doctor",
     "telephone": "0774057437",
     "age": 24    
-    
 }
 
 print(tenant)
