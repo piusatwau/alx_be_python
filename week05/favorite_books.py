@@ -14,3 +14,6 @@ print(favorite_books.keys())
 #returning dictionary values
 print(favorite_books.values())
 
+#retrieving only genre
+print(favorite_books.get("genre"))
+
