@@ -16,7 +16,7 @@ def main():
 
         if choice == '1':
             # Prompt for and add an item
-            added_item = input("please write the name of the item to add: ").lower()
+            added_item = input("Enter the item to add: ").lower()
             shopping_list.append(added_item)            
         elif choice == '2':
             # Prompt for and remove an item
@@ -36,6 +36,10 @@ def main():
         else:
             print("Invalid choice. Please try again.")
 
+display_menu()
 main()
+
+if __name__ == "__main__":
+    main()
     
     
