@@ -21,7 +21,7 @@ print("4. multiply works as *")
 
 operation = input("Please enter the operation you would like to perform on the numbers ('add', 'subtract', 'multiply', or 'divide'): ").lower()
 
-def perform_operation(num1:float, num2:float, operation:str):
+def perform_operation(num1, num2, operation):
     match operation:
         case "add":
             result = num1+num2
