@@ -15,7 +15,6 @@
 #     def display_balance(self):
 #         print(f"Current balance: ${self.__account_balance}")
 
-
 class BankAccount:
     def __init__(self, initial_balance=0):
         self.__account_balance = initial_balance
@@ -23,7 +22,7 @@ class BankAccount:
     def deposit(self, amount):
         if amount > 0:
             self.__account_balance += amount
-            print(f"${amount} deposited successfully.")
+            print(f"Deposited: ${amount}")  # Output only this line in the desired format
         else:
             print("Deposit amount must be positive.")
 
@@ -41,4 +40,4 @@ class BankAccount:
             return False
 
     def display_balance(self):
-        print(f"Current Balance: ${self.__account_balance}")  # Updated to match the requested format
+        print(f"Current Balance: ${self.__account_balance}")
