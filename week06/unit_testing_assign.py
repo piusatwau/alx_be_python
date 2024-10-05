@@ -12,7 +12,7 @@
 # Write test methods to check different scenarios (e.g., valid input, invalid input) and verify expected behavior.
 
 import unittest
-
+x = input("please enter interger to get square: ")
 def square(x):
     return pow(x, 2)
 
@@ -21,6 +21,9 @@ class TestSquare(unittest.TestCase):
     def test_trueSquare(self):
         result = square(4)
         self.assertEqual(result, 16)
+    def test_isNumber(self):
+            result = isinstance(x, int)
+            self.assertTrue(result, x)
     
 if __name__ == "__main__":
     unittest.main()
