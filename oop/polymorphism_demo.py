@@ -1,3 +1,8 @@
+# a good understanding of polymorphism in Python, where the base class Shape has a method area(), 
+# and the derived classes Rectangle and Circle override this method to provide specific implementations 
+# for their respective shapes.
+
+
 import math
 
 class Shape:
