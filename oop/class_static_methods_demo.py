@@ -4,7 +4,7 @@ class Calculator:
     
     def __repr__(self):
         # Returning a string representation of the object
-        return f"Calculator: {self.calculator_type}"
+        return f"Calculation_type: {self.calculator_type}"
     
     def __init__(self, a, b):
         self.a = a
@@ -18,5 +18,5 @@ class Calculator:
     # Class method to multiply two numbers and print the class attribute
     @classmethod
     def multiply(cls, a, b):
-        print(f"Calculation type: {cls.calculator_type}")
+        print(f"Calculation_type: {cls.calculator_type}")
         return a * b
