@@ -18,5 +18,5 @@ class Calculator:
     # Class method to multiply two numbers and print the class attribute
     @classmethod
     def multiply(cls, a, b):
-        print(f"calculation_type: {cls.calculator_type}")
+        print(f"Calculation type: {cls.calculator_type}")
         return a * b
