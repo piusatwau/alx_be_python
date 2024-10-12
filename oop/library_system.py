@@ -22,8 +22,8 @@ class PrintBook(Book):
     
 # composition in python simply means the composing class takes the prior classes as its arguments
 class Library:
-    def __init__(self, books):
-        self.books = []
+    def __init__(self, books=None):
+        self.books = books if books is not None else []
         
     def add_book(self, book):
         self.books.append(book)
