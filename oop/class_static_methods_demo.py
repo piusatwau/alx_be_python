@@ -8,7 +8,7 @@ class Calculator:
         return a + b
     @classmethod
     def multiply(cls, a, b):
-        print(f"Calculation Type: {cls.calculator_type}")
+        print(f"calculation_type", "Arithmetic Operations")
         return a * b
     
 solution1 = Calculator.add(45, 6)
