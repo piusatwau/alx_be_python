@@ -11,7 +11,3 @@ class Calculator:
         print(f"calculation_type", "Arithmetic Operations")
         return a * b
     
-solution1 = Calculator.add(45, 6)
-solution2 = Calculator.multiply(24, 4)
-print(solution1)
-print(solution2)
