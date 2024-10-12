@@ -1,9 +1,10 @@
 
-# solution 1
+# . Mastering Inheritance and Composition in Python
 class Book:
     def __init__(self, title, author):
         self.title = title
         self.author  = author
+# Inheritance
 class EBook(Book):
     def __init__(self, title, author, file_size):
         super().__init__(title, author)
@@ -15,7 +16,20 @@ class PrintBook(Book):
         self.page_count = page_count
     
     
+# composition in python simply means the composing class takes the prior classes as its arguments
 class Library:
     def __init__(self, books):
         self.books = []
+        
+    def add_book(self, book):
+        self.books.append(book)
+    def list_books(self):
+        for book in self.books:
+             if isinstance(book, EBook):
+                print(f"EBook: '{book.title}' by {book.author}, File Size: {book.file_size}MB")
+             elif isinstance(book, PrintBook):
+                print(f"Print Book: '{book.title}' by {book.author}, Pages: {book.page_count}")
+             else:
+                print(f"Book: '{book.title}' by {book.author}")
+
         
