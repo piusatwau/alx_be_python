@@ -11,4 +11,18 @@ mydb = mysql.connector.connect(
     
 )
 
-print(mydb.get_server_info())
+# print(mydb.get_server_info())
+
+mycursor = mydb.cursor()
+
+mycursor.execute("SHOW DATABASES")
+
+all_databases = mycursor.fetchall()
+
+for database in all_databases:
+    print(database)
+
+mycursor.execute("USE sql_inventory")
+
+
+# print(all_databases)
